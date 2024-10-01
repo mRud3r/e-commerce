@@ -1,0 +1,59 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Wireless Headphones",
+        "category": "Electronics",
+        "price": 59.99,
+        "currency": "USD",
+        "rating": 4.5,
+        "stock": 120,
+        "description": "High-quality wireless headphones with noise-cancellation feature.",
+        "image": "https://example.com/images/headphones.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Running Shoes",
+        "category": "Fashion",
+        "price": 89.99,
+        "currency": "USD",
+        "rating": 4.7,
+        "stock": 85,
+        "description": "Comfortable and durable running shoes for all terrains.",
+        "image": "https://example.com/images/shoes.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Smart Watch",
+        "category": "Electronics",
+        "price": 199.99,
+        "currency": "USD",
+        "rating": 4.8,
+        "stock": 65,
+        "description": "Stylish smartwatch with health tracking and GPS functionality.",
+        "image": "https://example.com/images/smartwatch.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Office Chair",
+        "category": "Furniture",
+        "price": 129.99,
+        "currency": "USD",
+        "rating": 4.2,
+        "stock": 40,
+        "description": "Ergonomic office chair with lumbar support and adjustable height.",
+        "image": "https://example.com/images/chair.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Coffee Maker",
+        "category": "Home Appliances",
+        "price": 49.99,
+        "currency": "USD",
+        "rating": 4.3,
+        "stock": 70,
+        "description": "Automatic coffee maker with customizable brewing settings.",
+        "image": "https://example.com/images/coffeemaker.jpg"
+      }
+    ]
+  }
