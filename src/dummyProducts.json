@@ -43,17 +43,6 @@
         "stock": 40,
         "description": "Ergonomic office chair with lumbar support and adjustable height.",
         "image": "https://example.com/images/chair.jpg"
-      },
-      {
-        "id": 5,
-        "name": "Coffee Maker",
-        "category": "Home Appliances",
-        "price": 49.99,
-        "currency": "USD",
-        "rating": 4.3,
-        "stock": 70,
-        "description": "Automatic coffee maker with customizable brewing settings.",
-        "image": "https://example.com/images/coffeemaker.jpg"
       }
     ]
   }
