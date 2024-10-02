@@ -1,6 +1,6 @@
 export default function Navigation() {
     return (
-        <nav className="w-full fixed top-0 bg-slate-500">
+        <nav className="w-full fixed top-0 bg-stone-200">
             <ul className="flex gap-4 p-3 justify-center">
                 <li>Home</li>
                 <li>Products</li>

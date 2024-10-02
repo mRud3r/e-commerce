@@ -9,10 +9,12 @@ function App() {
   return (
     <>
     <Navigation />
-    <main className='p-6 flex gap-2'>
-    {productsData.products.map((product) => (
+    <main className='px-4 py-6 max-w-screen-lg min-h-screen mx-auto m-12 bg-stone-100 text-stone-900'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
+      {productsData.products.map((product) => (
       <Product name={product.name} price={product.price} />
     ))}
+      </div>
     </main>
     </>
   )
