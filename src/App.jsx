@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage.jsx";
 import Collection from "./pages/Collection.jsx";
 import RootLayout from "./pages/RootLayout.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
+import { CartContexProvider } from "./context/CartContext.jsx";
 
 const router = createBrowserRouter([
 	{
