@@ -4,6 +4,7 @@ import Collection from "./pages/Collection.jsx";
 import RootLayout from "./pages/RootLayout.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
 import { CartProvider } from "./context/CartContext.jsx";
+import ContactPage from "./pages/ContactPage.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -13,6 +14,7 @@ const router = createBrowserRouter([
 		children: [
 			{ path: "/", element: <HomePage /> },
 			{ path: "/collection", element: <Collection /> },
+			{ path: "/contact", element: <ContactPage /> },
 		],
 	},
 ]);

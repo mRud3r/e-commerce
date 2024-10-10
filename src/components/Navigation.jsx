@@ -21,6 +21,9 @@ export default function Navigation() {
 				<li>
 					<Link to="/collection" className="hover:text-stone-900">Collection</Link>
 				</li>
+				<li>
+					<Link to="/contact" className="hover:text-stone-900">Contact</Link>
+				</li>
 			</ul>
 			</div>
 			<div className="flex flex-row items-center gap-4">
