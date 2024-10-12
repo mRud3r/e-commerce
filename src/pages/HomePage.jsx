@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import ProductSlider from "../components/ProductSlider";
+import ProductsData from '../dummyProducts.json';
 
 export default function HomePage() {
 	return (
@@ -10,6 +12,8 @@ export default function HomePage() {
         </div>
 
         <Link to='collection'>Whole Collection</Link>
+
+		<ProductSlider products={ProductsData.products}/>
 
 			</main>
 		</>
