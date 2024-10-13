@@ -1,10 +1,15 @@
+import { useContext } from 'react';
 import productsData from '../dummyProducts.json'
 import Product from './Product.jsx';
+import { ProductFilterContext } from '../context/ProductFilterContext.jsx';
 
 export default function ProductList() {
+
+    const {filteredProducts} = useContext(ProductFilterContext);
+
     return (
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
-            {productsData.products.map((product) => (
+            {filteredProducts.map((product) => (
         <Product key={product.id} product={product} />
       ))}
         </div>

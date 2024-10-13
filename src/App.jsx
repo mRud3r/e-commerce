@@ -5,6 +5,7 @@ import RootLayout from "./pages/RootLayout.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
 import { CartProvider } from "./context/CartContext.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
+import { ProductFilterProvider } from "./context/ProductFilterContext.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -22,7 +23,9 @@ const router = createBrowserRouter([
 function App() {
 	return (
 	<CartProvider>
-	<RouterProvider router={router} />
+		<ProductFilterProvider>
+		<RouterProvider router={router} />
+		</ProductFilterProvider>
 	</CartProvider>
 	);
 }
