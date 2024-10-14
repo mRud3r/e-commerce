@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { TfiClose } from "react-icons/tfi";
 import { CartContext } from "../context/CartContext";
 import CartItem from "./CartItem";
+import { Link } from "react-router-dom";
 
 export default function CartContent( {cartVisible, setCartVisible} ) {
 const {cartItems} = useContext(CartContext);
@@ -23,6 +24,8 @@ const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
                 <CartItem key={item.id} item={item} />
             ))
         )}
+
+       <Link to="/checkout" >Go to checkout</Link>
 
         </div>
     );

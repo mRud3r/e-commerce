@@ -15,7 +15,7 @@ export const ProductFilterProvider = ({children}) => {
     
     
     return (
-        <ProductFilterContext.Provider value={{filteredProducts, setGender, setProductType}}>
+        <ProductFilterContext.Provider value={{filteredProducts, gender, setGender, setProductType}}>
             {children}
         </ProductFilterContext.Provider>
     );

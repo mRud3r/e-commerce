@@ -6,6 +6,8 @@ import ErrorPage from "./pages/ErrorPage.jsx";
 import { CartProvider } from "./context/CartContext.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
 import { ProductFilterProvider } from "./context/ProductFilterContext.jsx";
+import ProductDetail from './pages/ProductDetail.jsx'
+import CheckoutPage from "./pages/CheckoutPage.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -16,6 +18,8 @@ const router = createBrowserRouter([
 			{ path: "/", element: <HomePage /> },
 			{ path: "/collection", element: <Collection /> },
 			{ path: "/contact", element: <ContactPage /> },
+			{ path: "/products/:productId", element: <ProductDetail /> },
+			{ path: "/checkout", element: <CheckoutPage />},
 		],
 	},
 ]);
