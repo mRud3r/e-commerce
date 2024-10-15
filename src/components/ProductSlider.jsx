@@ -6,11 +6,10 @@ import Product from './Product';
 
 const ProductSlider = ({ products }) => {
 
-    const settings = {
-        dots: true,         
+    const settings = {        
         infinite: true,          
         speed: 500,              
-        slidesToShow: 3,          
+        slidesToShow: 4,          
         slidesToScroll: 1,        
         responsive: [   
             {
@@ -18,8 +17,7 @@ const ProductSlider = ({ products }) => {
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
+                    infinite: true
                 }
             },
             {
@@ -40,7 +38,7 @@ const ProductSlider = ({ products }) => {
     };
 
     return (
-        <div className="product-slider w-full h-96 my-80">
+        <div className="product-slider size-full my-10">
             <Slider {...settings}>
                 {products.map((product) => (
                     <Product key={product.id} product={product} />

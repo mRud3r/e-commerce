@@ -11,7 +11,7 @@ export default function Navigation() {
 	const [cartVisible, setCartVisible] = useState(false);
 
 	return (
-		<nav className="w-full h-14 fixed px-4 top-0 flex flex-row items-center justify-between">
+		<nav className="w-full h-14 fixed z-40 px-4 top-0 flex flex-row items-center justify-between">
 			<div className="flex flex-row items-center">
 			<a href="/" className="text-lg font-bold">+ Router Side +</a>
 			<ul className="hidden sm:flex gap-4 px-4 justify-center text-stone-600">
