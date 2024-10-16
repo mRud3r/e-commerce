@@ -1,5 +1,4 @@
 import { useContext } from 'react';
-import productsData from '../dummyProducts.json'
 import Product from './Product.jsx';
 import { ProductFilterContext } from '../context/ProductFilterContext.jsx';
 
