@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import ProductSlider from "../components/ProductSlider";
-import ProductsData from '../dummyProducts.json';
+import { useContext } from "react";
+import { ProductFilterContext } from "../context/ProductFilterContext";
 
 export default function HomePage() {
+	const {productsForMen, productsForWomen} = useContext(ProductFilterContext);
 	return (
 		<>
 			<main className="w-full flex flex-col items-center min-h-screen px-2">
@@ -13,7 +15,9 @@ export default function HomePage() {
 
         <Link to='collection'>Whole Collection</Link>
 
-		<ProductSlider products={ProductsData.products}/>
+		<ProductSlider products={productsForMen}/>
+
+		<ProductSlider products={productsForWomen}/>
 
 			</main>
 		</>

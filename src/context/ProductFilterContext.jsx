@@ -12,10 +12,18 @@ export const ProductFilterProvider = ({children}) => {
         const matchesType = productType ? product.type === productType : true;
         return matchesGender && matchesType;
       });
+
+    const productsForMen = productsData.products.filter((product) => {
+        return product.gender === 'men';
+    });
+
+    const productsForWomen = productsData.products.filter((product) => {
+        return product.gender === 'women';
+    });
     
     
     return (
-        <ProductFilterContext.Provider value={{filteredProducts, gender, setGender, setProductType}}>
+        <ProductFilterContext.Provider value={{filteredProducts, gender, setGender, setProductType, productsForMen, productsForWomen}}>
             {children}
         </ProductFilterContext.Provider>
     );
