@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Basic White T-Shirt",
       "price": 19.99,
-      "image": "https://example.com/images/tshirt1.jpg",
+      "image": "/images/white-t-shirt.jpg",
       "description": "A comfortable and soft basic white t-shirt made from 100% cotton. Perfect for casual wear.",
       "type": "t-shirt",
       "gender": "men"
@@ -13,7 +13,7 @@
       "id": 2,
       "name": "Skinny Fit Jeans",
       "price": 49.99,
-      "image": "https://example.com/images/jeans1.jpg",
+      "image": "/images/skinny-fit-jeans.jpg",
       "description": "Stylish skinny fit jeans designed for comfort and a sleek look. Made from durable denim.",
       "type": "jeans",
       "gender": "women"
@@ -22,7 +22,7 @@
       "id": 3,
       "name": "Leather Biker Jacket",
       "price": 129.99,
-      "image": "https://example.com/images/jacket1.jpg",
+      "image": "/images/biker-jacket.jpg",
       "description": "Classic black leather biker jacket. Features a zip front and zip pockets. Timeless and versatile.",
       "type": "jacket",
       "gender": "men"
@@ -31,7 +31,7 @@
       "id": 4,
       "name": "Wool Blend Sweater",
       "price": 59.99,
-      "image": "https://example.com/images/sweater1.jpg",
+      "image": "/images/wool-sweater.jpg",
       "description": "Cozy wool blend sweater in a relaxed fit. Great for layering in the colder months.",
       "type": "sweater",
       "gender": "women"
@@ -40,7 +40,7 @@
       "id": 5,
       "name": "Casual Hoodie",
       "price": 39.99,
-      "image": "https://example.com/images/hoodie1.jpg",
+      "image": "/images/hoodie.jpg",
       "description": "A soft, fleece-lined hoodie in a regular fit. Features a drawstring hood and a kangaroo pocket.",
       "type": "sweater",
       "gender": "men"
@@ -49,7 +49,7 @@
       "id": 6,
       "name": "High-Waisted Skinny Jeans",
       "price": 59.99,
-      "image": "https://example.com/images/jeans2.jpg",
+      "image": "/images/waisted-jeans.jpg",
       "description": "High-waisted skinny jeans with a flattering fit. Crafted from stretch denim for all-day comfort.",
       "type": "jeans",
       "gender": "women"
@@ -58,7 +58,7 @@
       "id": 7,
       "name": "Denim Jacket",
       "price": 79.99,
-      "image": "https://example.com/images/jacket2.jpg",
+      "image": "/images/denim-jacket.jpg",
       "description": "Classic blue denim jacket with buttoned cuffs and chest pockets. A wardrobe essential for any season.",
       "type": "jacket",
       "gender": "women"
@@ -67,7 +67,7 @@
       "id": 8,
       "name": "Polo Shirt",
       "price": 29.99,
-      "image": "https://example.com/images/polo1.jpg",
+      "image": "/images/polo-shirt.jpg",
       "description": "Smart-casual polo shirt made from breathable cotton. Features a buttoned collar and short sleeves.",
       "type": "t-shirt",
       "gender": "men"
@@ -76,7 +76,7 @@
       "id": 9,
       "name": "V-Neck Wool Sweater",
       "price": 49.99,
-      "image": "https://example.com/images/sweater2.jpg",
+      "image": "/images/v-neck.jpg",
       "description": "A lightweight V-neck sweater made from soft wool. Perfect for layering over shirts or wearing alone.",
       "type": "sweater",
       "gender": "men"
@@ -85,16 +85,16 @@
       "id": 10,
       "name": "Cargo Pants",
       "price": 44.99,
-      "image": "https://example.com/images/pants1.jpg",
+      "image": "/images/cargo-pants.jpg",
       "description": "Utility-inspired cargo pants with multiple pockets. Made from durable cotton with a relaxed fit.",
       "type": "pants",
       "gender": "men"
     },
     {
       "id": 11,
-      "name": "Tailored Chinos",
+      "name": "Baggy Pants",
       "price": 54.99,
-      "image": "https://example.com/images/chinos1.jpg",
+      "image": "/images/baggy-pants.jpg",
       "description": "Slim-fit tailored chinos made from soft, stretch cotton. Ideal for both casual and formal occasions.",
       "type": "pants",
       "gender": "women"
@@ -103,7 +103,7 @@
       "id": 12,
       "name": "Bomber Jacket",
       "price": 89.99,
-      "image": "https://example.com/images/jacket3.jpg",
+      "image": "/images/bomber-jacket.jpg",
       "description": "Lightweight bomber jacket with ribbed cuffs and hem. A modern take on a classic style.",
       "type": "jacket",
       "gender": "men"

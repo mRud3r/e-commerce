@@ -16,7 +16,12 @@ const ProductDetail = () => {
 
   return (
     <main className='min-h-screen flex flex-row items-center justify-center'>
-      <div className='bg-slate-400 w-full h-screen'></div>
+
+      <div className='w-full h-screen flex items-center justify-center'>
+        <img src={product.image} alt="" />
+      </div>
+
+
       <div className='flex items-center justify-center w-full'>
       <div className='flex flex-col gap-8 size-full max-w-[440px]'>
         <div>
@@ -25,7 +30,7 @@ const ProductDetail = () => {
         </div>
       <button onClick={() => addToCart(product)} className='px-4 py-2 bg-stone-900 text-stone-50 w-full'>Add To Cart</button>
       <div>
-      <Accordion title='Description' description='description' />
+      <Accordion title='Description' description={product.description} />
       <Accordion title='Material' description='description' />
       </div>
       </div>
