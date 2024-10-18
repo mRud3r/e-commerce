@@ -8,9 +8,8 @@ export default function HomePage() {
 	return (
 		<>
 		<header className="h-screen w-full flex items-center justify-center bg-[url('/images/hero.jpg')] bg-cover">
-			<div>
-				<h1 className="text-4xl font-black text-stone-50">New Supply</h1>
-			</div>
+		<div className="absolute bg-black w-full h-full z-1 opacity-40"></div>
+				<Link to='collection' className="text-4xl font-black text-stone-50 z-20">Whole Collection</Link>
 		</header>
 			<main className="w-full flex flex-col items-center min-h-screen px-2">
         <div className="p-6 flex flex-col items-center justify-center w-6/12 gap-6 my-28 text-lg font-bold">

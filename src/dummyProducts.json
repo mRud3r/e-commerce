@@ -7,7 +7,8 @@
       "image": "/images/white-t-shirt.jpg",
       "description": "A comfortable and soft basic white t-shirt made from 100% cotton. Perfect for casual wear.",
       "type": "t-shirt",
-      "gender": "men"
+      "gender": "men",
+      "material": "100% cotton"
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "image": "/images/skinny-fit-jeans.jpg",
       "description": "Stylish skinny fit jeans designed for comfort and a sleek look. Made from durable denim.",
       "type": "jeans",
-      "gender": "women"
+      "gender": "women",
+      "material": "98% cotton, 2% elastane"
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "image": "/images/biker-jacket.jpg",
       "description": "Classic black leather biker jacket. Features a zip front and zip pockets. Timeless and versatile.",
       "type": "jacket",
-      "gender": "men"
+      "gender": "men",
+      "material": "100% leather"
     },
     {
       "id": 4,
@@ -34,7 +37,8 @@
       "image": "/images/wool-sweater.jpg",
       "description": "Cozy wool blend sweater in a relaxed fit. Great for layering in the colder months.",
       "type": "sweater",
-      "gender": "women"
+      "gender": "women",
+      "material": "50% wool, 50% acrylic"
     },
     {
       "id": 5,
@@ -43,7 +47,8 @@
       "image": "/images/hoodie.jpg",
       "description": "A soft, fleece-lined hoodie in a regular fit. Features a drawstring hood and a kangaroo pocket.",
       "type": "sweater",
-      "gender": "men"
+      "gender": "men",
+      "material": "60% cotton, 40% polyester"
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "image": "/images/waisted-jeans.jpg",
       "description": "High-waisted skinny jeans with a flattering fit. Crafted from stretch denim for all-day comfort.",
       "type": "jeans",
-      "gender": "women"
+      "gender": "women",
+      "material": "98% cotton, 2% elastane"
     },
     {
       "id": 7,
@@ -61,7 +67,8 @@
       "image": "/images/denim-jacket.jpg",
       "description": "Classic blue denim jacket with buttoned cuffs and chest pockets. A wardrobe essential for any season.",
       "type": "jacket",
-      "gender": "women"
+      "gender": "women",
+      "material": "100% cotton"
     },
     {
       "id": 8,
@@ -70,7 +77,8 @@
       "image": "/images/polo-shirt.jpg",
       "description": "Smart-casual polo shirt made from breathable cotton. Features a buttoned collar and short sleeves.",
       "type": "t-shirt",
-      "gender": "men"
+      "gender": "men",
+      "material": "100% cotton"
     },
     {
       "id": 9,
@@ -79,7 +87,8 @@
       "image": "/images/v-neck.jpg",
       "description": "A lightweight V-neck sweater made from soft wool. Perfect for layering over shirts or wearing alone.",
       "type": "sweater",
-      "gender": "men"
+      "gender": "men",
+      "material": "100% wool"
     },
     {
       "id": 10,
@@ -88,16 +97,18 @@
       "image": "/images/cargo-pants.jpg",
       "description": "Utility-inspired cargo pants with multiple pockets. Made from durable cotton with a relaxed fit.",
       "type": "pants",
-      "gender": "men"
+      "gender": "men",
+      "material": "100% cotton"
     },
     {
       "id": 11,
       "name": "Baggy Pants",
       "price": 54.99,
       "image": "/images/baggy-pants.jpg",
-      "description": "Slim-fit tailored chinos made from soft, stretch cotton. Ideal for both casual and formal occasions.",
-      "type": "pants",
-      "gender": "women"
+      "description": "Comfortable baggy pants with a loose fit. Made from lightweight, breathable fabric, perfect for casual and relaxed occasions.",
+      "type": "jeans",
+      "gender": "women",
+      "material": "80% cotton, 20% polyester"
     },
     {
       "id": 12,
@@ -106,7 +117,8 @@
       "image": "/images/bomber-jacket.jpg",
       "description": "Lightweight bomber jacket with ribbed cuffs and hem. A modern take on a classic style.",
       "type": "jacket",
-      "gender": "men"
+      "gender": "men",
+      "material": "100% nylon"
     }
   ]
 }

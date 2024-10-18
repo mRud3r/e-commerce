@@ -31,7 +31,7 @@ const ProductDetail = () => {
       <button onClick={() => addToCart(product)} className='px-4 py-2 bg-stone-900 text-stone-50 w-full'>Add To Cart</button>
       <div>
       <Accordion title='Description' description={product.description} />
-      <Accordion title='Material' description='description' />
+      <Accordion title='Material' description={product.material} />
       </div>
       </div>
       </div>
