@@ -5,6 +5,7 @@ import { ProductFilterContext } from '../context/ProductFilterContext.jsx';
 
 export default function Collection() {
 const { gender, setGender } = useContext(ProductFilterContext);
+const { productType, setProductType } = useContext(ProductFilterContext);
 
     return (
         <>
