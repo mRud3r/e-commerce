@@ -3,12 +3,14 @@ import { useState } from "react";
 export default function NewsletterForm() {
 	const [email, setEmail] = useState("");
     const [isChecked, setIsChecked] = useState(false);
+	const [isSent, setIsSent] = useState(false);
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		console.log(email);
 		setEmail("");
         setIsChecked(false);
+		setIsSent(true);
 	};
 
 	return (
@@ -26,8 +28,9 @@ export default function NewsletterForm() {
 							required
 							className=" bg-inherit p-4 w-full"
 						/>
-						<button type="submit" className="p-4 w-max">
-							Subscribe
+						<button type="submit" className="p-4 w-max bg-stone-500 text-stone-50 disabled:bg-stone-200 disabled:text-stone-950"
+						disabled={isSent}>
+						{isSent ? "Subscribed" : "Subscribe"}
 						</button>
 					</div>
                     <label className="flex items-center">

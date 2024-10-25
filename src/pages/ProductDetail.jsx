@@ -15,14 +15,14 @@ const ProductDetail = () => {
   }
 
   return (
-    <main className='min-h-screen flex flex-row items-center justify-center'>
+    <main className='min-h-screen flex flex-col md:flex-row items-center gap-8 md:justify-center py-16 md:py-40 px-2'>
 
-      <div className='w-full h-screen flex items-center justify-center'>
+      <div className='w-full max-w-96 flex items-center justify-center'>
         <img src={product.image} alt="" />
       </div>
 
 
-      <div className='flex items-center justify-center w-full'>
+      <div className='flex items-center justify-center'>
       <div className='flex flex-col gap-8 size-full max-w-[440px]'>
         <div>
         <p className='text-lg font-bold'>{product.name}</p>
@@ -36,7 +36,7 @@ const ProductDetail = () => {
       </div>
       </div>
     </main>
-  );
+  ); 
 };
-
-export default ProductDetail;
+  
+export default ProductDetail;  

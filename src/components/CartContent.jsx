@@ -5,12 +5,9 @@ import CartItem from "./CartItem";
 import { Link } from "react-router-dom";
 
 export default function CartContent({ cartVisible, setCartVisible }) {
-	const { cartItems } = useContext(CartContext);
+	const { cartItems, totalItems } = useContext(CartContext);
 
-	const totalItems = cartItems.reduce(
-		(total, item) => total + item.quantity,
-		0
-	);
+	
 
 	return (
 		<>

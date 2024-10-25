@@ -6,6 +6,7 @@ export default function ContactForm() {
         email: '',
         message: ''
     });
+    const [isSent, setIsSennt] = useState(false);
 
     const handleChange = (e) => {
         const {name, value} = e.target;
@@ -23,6 +24,7 @@ export default function ContactForm() {
             email: '',
             message: ''
         })
+        setIsSennt(true);
     }
 
     return (
@@ -44,7 +46,7 @@ export default function ContactForm() {
             <textarea name="message" value={formData.message} onChange={handleChange} placeholder="your message..." className="bg-stone-200 w-full p-4"></textarea>
             </div>
 
-            <button type="submit" className="bg-stone-700 hover:bg-stone-800 text-stone-50 py-4" >Send Message</button>
+            <button type="submit" disabled={isSent} className="bg-stone-700 disabled:bg-stone-400 hover:bg-stone-800 text-stone-50 py-4" >{isSent ? "Thank You" : "Send"}</button>
         </form>
     );
 }

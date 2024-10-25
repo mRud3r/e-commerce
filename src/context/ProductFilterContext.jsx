@@ -20,6 +20,10 @@ export const ProductFilterProvider = ({children}) => {
     const productsForWomen = productsData.products.filter((product) => {
         return product.gender === 'women';
     });
+
+    const sugestedItems = productsData.products.filter((product) => {
+        return product
+    })
     
     
     return (
