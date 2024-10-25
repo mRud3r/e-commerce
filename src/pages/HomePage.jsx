@@ -12,9 +12,9 @@ export default function HomePage() {
 				<Link to='collection' className="text-4xl font-black text-stone-50 z-20">Whole Collection</Link>
 		</header>
 			<main className="w-full flex flex-col items-center min-h-screen px-2 mb-40">
-        <div className="p-6 flex flex-col items-center justify-center w-6/12 gap-6 my-28 text-lg font-bold">
-          <h1>Discover the Fall 2024 Collection</h1>
-          <p className="font-light">Embrace the season with our latest styles designed for comfort, warmth, and effortless elegance. From cozy knits to bold outerwear, this collection captures the essence of autumn in every detail. Perfect for crisp mornings and cool evenings, these pieces will keep you looking chic as the leaves begin to fall. Explore the new arrivals now and find your signature look for the season.</p>
+        <div className="p-6 flex flex-col items-center justify-center w-full max-w-[800px] gap-24 my-40 text-lg font-bold">
+          <h1>Fashion Forward</h1>
+          <p className="font-light">Dive into our fashion collection, showcasing a range of clothing designed for every occasion. From casual wear that exudes comfort to chic pieces perfect for a night out, our selection is all about versatility. We pay attention to the latest trends while ensuring timeless designs that you’ll love to wear season after season. Each item is crafted with care, using high-quality fabrics that feel as good as they look.</p>
 		  <Link to='collection'>Whole Collection</Link>
         </div>
 		<div className="w-full flex flex-col gap-20">

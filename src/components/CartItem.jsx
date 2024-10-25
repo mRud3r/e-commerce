@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import { GoTrash } from "react-icons/go";
+import { currencyFormatter } from "../util";
 
 export default function CartItem({ item }) {
 	const { removeItem, updateQuantity } = useContext(CartContext);
@@ -26,7 +27,7 @@ export default function CartItem({ item }) {
 							+
 						</button>
 					</div>
-					<p>{item.price}</p>
+					<p>{currencyFormatter.format(item.price)}</p>
 				</div>
 			</div>
 		</div>

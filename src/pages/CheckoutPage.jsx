@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { CartContext } from "../context/CartContext";
 import CartItem from "../components/CartItem";
+import { currencyFormatter } from "../util";
 
 export default function CheckoutPage() {
 	const [formData, setFormData] = useState({
@@ -112,7 +113,7 @@ export default function CheckoutPage() {
 				))}
 				<div className="flex w-full justify-between">
 					<p className="text-2xl font-bold">Total:</p>
-					<p className="text-2xl font-bold">{calculateTotalPrice()}</p>
+					<p className="text-2xl font-bold">{currencyFormatter.format(calculateTotalPrice())}</p>
 				</div>
 			</div>
 			</div>

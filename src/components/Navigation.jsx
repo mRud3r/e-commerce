@@ -51,8 +51,36 @@ export default function Navigation() {
 			</div>
 
 
-            <div className={`fixed top-0 left-0 bottom-0 overflow-hidden transition-all bg-stone-50 ${menuVisible ? 'w-full' : 'w-0'}`}>
+            <div className={`fixed top-0 left-0 bottom-0 flex flex-col overflow-hidden transition-all bg-stone-50 ${menuVisible ? 'w-full' : 'w-0'}`}>
             <TfiClose onClick={() => setMenuVisible(false)} className="absolute top-4 right-4" />
+			<a href="/" className="text-lg font-bold p-3">+ Router Side +</a>
+			<ul className=" flex flex-col gap-4 px-4 mt-8 text-4xl">
+				<li>
+					<NavLink to="/"
+					onClick={() => setMenuVisible(flase)}
+					className={({ isActive }) => 
+						isActive 
+							? "text-stone-950 font-semibold" 
+							: "text-stone-500 hover:text-stone-950" }
+							>Home</NavLink>
+				</li>
+				<li>
+					<NavLink to="/collection"
+					onClick={() => setMenuVisible(flase)}
+					className={({ isActive }) => 
+						isActive 
+							? "text-stone-950 font-semibold" 
+							: "text-stone-500 hover:text-stone-950" }>Collection</NavLink>
+				</li>
+				<li>
+					<NavLink to="/contact"
+					onClick={() => setMenuVisible(flase)}
+					 className={({ isActive }) => 
+						isActive 
+							? "text-stone-950 font-semibold" 
+							: "text-stone-500 hover:text-stone-950" }>Contact</NavLink>
+				</li>
+			</ul>
             </div>
 
 			<CartContent cartVisible={cartVisible} setCartVisible={setCartVisible} />
