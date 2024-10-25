@@ -3,7 +3,8 @@ import NewsletterForm from "./NewsletterForm";
 
 export default function Footer() {
     return (
-        <footer className="p-6 bg-stone-100 flex flex-row">
+        <footer className="py-20 px-4 bg-stone-100 flex items-center justify-center">
+            <div className="container flex flex-col gap-4 md:flex-row">
             <div className="w-full flex flex-col items-start gap-4">
             <a href="/" className="text-lg font-bold">+ Router Side +</a>
             <nav>
@@ -21,8 +22,9 @@ export default function Footer() {
             </div>
             </div>
 
-            <div className="w-full">
+            <div className="w-full md:flex items-center justify-center">
                 <NewsletterForm />
+            </div>
             </div>
         </footer>
     );

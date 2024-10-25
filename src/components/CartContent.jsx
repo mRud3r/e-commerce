@@ -13,9 +13,10 @@ export default function CartContent({ cartVisible, setCartVisible }) {
 	);
 
 	return (
+		<>
 		<div
 			className={`fixed z-50 top-0 right-0 bottom-0 overflow-hidden transition-all bg-stone-50 ${
-				cartVisible ? "w-96" : "w-0"
+				cartVisible ? "w-full sm:w-96" : "w-0"
 			}`}>
 			<TfiClose
 				onClick={() => setCartVisible(false)}
@@ -34,6 +35,7 @@ export default function CartContent({ cartVisible, setCartVisible }) {
 						))}
 						<Link
 							to="/checkout"
+							onClick={() => setCartVisible(false)}
 							className="bg-stone-700 hover:bg-stone-800 text-stone-50 py-4 px-8 mt-4 block text-center">
 							Go to checkout
 						</Link>
@@ -41,5 +43,7 @@ export default function CartContent({ cartVisible, setCartVisible }) {
 				)}
 			</div>
 		</div>
+		{cartVisible && <div className="fixed w-screen h-screen top-0 left-0 bg-black/50" onClick={() => setCartVisible(false)}></div>}
+		</>
 	);
 }

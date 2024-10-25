@@ -8,7 +8,7 @@ export default function Collection() {
 
 	return (
 		<>
-			<main className="px-4 py-6 max-w-screen-lg min-h-screen mx-auto m-12 text-stone-900">
+			<main className="px-4 py-12 max-w-screen-lg min-h-screen mx-auto m-12 text-stone-900">
 				<div className="mb-4 flex items-center gap-6">
 					<div>
 						<label>Gender:</label>

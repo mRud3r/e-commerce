@@ -12,12 +12,12 @@ export default function NewsletterForm() {
 	};
 
 	return (
-		<div className="flex flex-col gap-4">
-			<p>Join The Club</p>
+		<div className="flex flex-col gap-2">
+			<p className="text-lg font-bold">Join The Club</p>
 			<div>
-				<form
+				<form className="flex flex-col gap-2"
 					onSubmit={handleSubmit}>
-					<div className="border w-96 flex flex-row justify-between">
+					<div className="border w-full max-w-96 flex flex-row justify-between">
 						<input
 							type="email"
 							value={email}
