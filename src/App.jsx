@@ -11,15 +11,15 @@ import CheckoutPage from "./pages/CheckoutPage.jsx";
 
 const router = createBrowserRouter([
 	{
-		path: "/",
+		path: "/e-commerce/",
 		element: <RootLayout />,
     errorElement: <ErrorPage />,
 		children: [
-			{ path: "/", element: <HomePage /> },
-			{ path: "/collection", element: <Collection /> },
-			{ path: "/contact", element: <ContactPage /> },
-			{ path: "/products/:productId", element: <ProductDetail /> },
-			{ path: "/checkout", element: <CheckoutPage />},
+			{ path: "/e-commerce/", element: <HomePage /> },
+			{ path: "/e-commerce/collection", element: <Collection /> },
+			{ path: "/e-commerce/contact", element: <ContactPage /> },
+			{ path: "/e-commerce/products/:productId", element: <ProductDetail /> },
+			{ path: "/e-commerce/checkout", element: <CheckoutPage />},
 		],
 	},
 ]);
