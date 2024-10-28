@@ -9,7 +9,7 @@ export default function HomePage() {
 		<>
 		<header className="h-screen w-full flex items-center justify-center bg-[url('/images/hero.jpg')] bg-cover">
 		<div className="absolute bg-black w-full h-full z-1 opacity-40"></div>
-				<Link to='collection' className="text-4xl font-black text-stone-50 z-20">Whole Collection</Link>
+				<Link to='/e-commerce/collection' className="text-4xl font-black text-stone-50 z-20">Whole Collection</Link>
 		</header>
 			<main className="w-full flex flex-col items-center min-h-screen px-2 mb-40">
         <div className="p-6 flex flex-col items-center justify-center w-full max-w-[800px] gap-24 my-40 text-lg font-bold">

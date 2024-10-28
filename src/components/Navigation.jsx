@@ -21,7 +21,7 @@ export default function Navigation() {
 			<a href="/" className="text-lg font-bold">+ Router Side +</a>
 			<ul className="hidden sm:flex gap-4 px-4 justify-center text-stone-600">
 				<li>
-					<NavLink to="/"
+					<NavLink to="/e-commerce/"
 					className={({ isActive }) => 
 						isActive 
 							? "text-stone-950 font-semibold" 
@@ -29,13 +29,13 @@ export default function Navigation() {
 							>Home</NavLink>
 				</li>
 				<li>
-					<NavLink to="/collection" className={({ isActive }) => 
+					<NavLink to="/e-commerce/collection" className={({ isActive }) => 
 						isActive 
 							? "text-stone-950 font-semibold" 
 							: "text-stone-500 hover:text-stone-950" }>Collection</NavLink>
 				</li>
 				<li>
-					<NavLink to="/contact" className={({ isActive }) => 
+					<NavLink to="/e-commerce/contact" className={({ isActive }) => 
 						isActive 
 							? "text-stone-950 font-semibold" 
 							: "text-stone-500 hover:text-stone-950" }>Contact</NavLink>
@@ -56,7 +56,7 @@ export default function Navigation() {
 			<a href="/" className="text-lg font-bold p-3">+ Router Side +</a>
 			<ul className=" flex flex-col gap-4 px-4 mt-8 text-4xl">
 				<li>
-					<NavLink to="/"
+					<NavLink to="/e-commerce/"
 					onClick={() => setMenuVisible(flase)}
 					className={({ isActive }) => 
 						isActive 
@@ -65,7 +65,7 @@ export default function Navigation() {
 							>Home</NavLink>
 				</li>
 				<li>
-					<NavLink to="/collection"
+					<NavLink to="/e-commerce/collection"
 					onClick={() => setMenuVisible(flase)}
 					className={({ isActive }) => 
 						isActive 
@@ -73,7 +73,7 @@ export default function Navigation() {
 							: "text-stone-500 hover:text-stone-950" }>Collection</NavLink>
 				</li>
 				<li>
-					<NavLink to="/contact"
+					<NavLink to="/e-commerce/contact"
 					onClick={() => setMenuVisible(flase)}
 					 className={({ isActive }) => 
 						isActive 

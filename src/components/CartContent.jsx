@@ -31,7 +31,7 @@ export default function CartContent({ cartVisible, setCartVisible }) {
 							<CartItem key={item.id} item={item} />
 						))}
 						<Link
-							to="/checkout"
+							to="/e-commerce/checkout"
 							onClick={() => setCartVisible(false)}
 							className="bg-stone-700 hover:bg-stone-800 text-stone-50 py-4 px-8 mt-4 block text-center">
 							Go to checkout

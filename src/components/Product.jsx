@@ -4,7 +4,7 @@ import { currencyFormatter } from "../util";
 export default function Product({ product }) {
 
 	return (
-		<Link to={`/products/${product.id}`}>
+		<Link to={`/e-commerce/products/${product.id}`}>
         <div className="aspect-w-6 aspect-h-9">
           <img
             src={product.image}
