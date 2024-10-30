@@ -1,14 +1,21 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import productsData from '../dummyProducts.json';
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import Accordion from '../components/Accordion';
+import { currencyFormatter } from '../util';
 
 const ProductDetail = () => {
   const { addToCart } = useContext(CartContext);
   const { productId } = useParams();
   const product = productsData.products.find(p => p.id === parseInt(productId));
+  const navigate = useNavigate();
+
+  const AddToCartAndNavigate = () => {
+    addToCart(product);
+    navigate('/e-commerce/collection');
+  }
 
   if (!product) {
     return <h2>Product not found</h2>;
@@ -26,9 +33,9 @@ const ProductDetail = () => {
       <div className='flex flex-col gap-8 size-full max-w-[440px]'>
         <div>
         <p className='text-lg font-bold'>{product.name}</p>
-        <p>{product.price}</p>
+        <p>{currencyFormatter.format(product.price)}</p>
         </div>
-      <button onClick={() => addToCart(product)} className='px-4 py-2 bg-stone-900 text-stone-50 w-full'>Add To Cart</button>
+      <button onClick={AddToCartAndNavigate} className='px-4 py-2 bg-stone-900 text-stone-50 w-full'>Add To Cart</button>
       <div>
       <Accordion title='Description' description={product.description} />
       <Accordion title='Material' description={product.material} />

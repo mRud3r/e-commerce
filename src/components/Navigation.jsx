@@ -22,6 +22,7 @@ export default function Navigation() {
 			<ul className="hidden sm:flex gap-4 px-4 justify-center text-stone-600">
 				<li>
 					<NavLink to="/e-commerce/"
+					end
 					className={({ isActive }) => 
 						isActive 
 							? "text-stone-950 font-semibold" 
