@@ -1,8 +1,17 @@
-# React + Vite
+# Minimal E-Commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a small, multi-page e-commerce application built with React Router. It features a clean and intuitive interface for users to browse, filter, and view product details. The application enables customers to add items to their cart, update quantities, or remove products entirely.
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://mrud3r.github.io/e-commerce/
+
+
+## Tech Stack
+
+**Frontend:** React, React-Router
+
+**Styling:** TailwindCSS
+
+
+## Screenshots
