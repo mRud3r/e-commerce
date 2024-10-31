@@ -15,3 +15,5 @@ https://mrud3r.github.io/e-commerce/
 
 
 ## Screenshots
+
+![Screen Recording 2024-10-31 at 01 13 09](https://github.com/user-attachments/assets/2e8c88f6-9aab-46db-9515-05e7609992b8)
